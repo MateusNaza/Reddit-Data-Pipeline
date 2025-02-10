@@ -1,2 +1,5 @@
 .venv
 config/configure.conf
+pipelines/__pycache__
+logs/
+dags/__pycache__
