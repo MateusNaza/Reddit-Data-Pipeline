@@ -3,3 +3,4 @@ config/configure.conf
 pipelines/__pycache__
 logs/
 dags/__pycache__
+utils/__pycache__

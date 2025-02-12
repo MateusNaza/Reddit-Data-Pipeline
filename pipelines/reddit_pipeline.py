@@ -1,6 +1,6 @@
 import pandas as pd
 
-from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+from etls.reddit_etl import connect_reddit, extract_posts
 from utils.constants import CLIENT_ID, SECRET, OUTPUT_PATH
 
 
