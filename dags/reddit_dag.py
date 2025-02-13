@@ -12,7 +12,7 @@ from pipelines.reddit_pipeline import reddit_pipeline
 
 default_args = {
     'owner': 'Mateus Naza',
-    'start_date': datetime(2025, 2, 6)  # Corrigido aqui
+    'start_date': datetime(2025, 2, 6)  
 }
 
 file_postfix = datetime.now().strftime('%Y%m%d')
@@ -34,7 +34,7 @@ extract = PythonOperator(
         'time_filter': 'day',
         'limit': 100
     },
-    dag=dag  # Adicionado aqui
+    dag=dag  
 )
 
-extract  # Adicionado para garantir que a tarefa esteja na DAG
+extract  
