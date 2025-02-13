@@ -46,3 +46,7 @@ def transform_data(post_list: list):
     post_df['title'] = post_df['title'].astype(str)
 
     return post_df
+
+
+def load_data_to_parquet(data: pd.DataFrame, path: str):
+    data.to_parquet(path, index=False)
