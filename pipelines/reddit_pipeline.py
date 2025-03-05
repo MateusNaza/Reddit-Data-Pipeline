@@ -15,7 +15,7 @@ def reddit_pipeline(file_name: str, subreddit: str, time_filter='day', limit=Non
     # transforma os dados
     post_df = transform_data(posts)
 
-    # loading to csv
+    # Carrega no formato Parquet
     file_path = f'{OUTPUT_PATH}/{file_name}.parquet'
     load_data_to_parquet(post_df, file_path)
 
